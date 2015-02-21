@@ -1,0 +1,25 @@
+body {
+    background-color: #EEE;
+}
+
+#main {
+    padding-top: 61px;
+}
+
+.jumbotron {
+    background-color: #FFF;
+}
+
+.section {
+    font-weight: bold;
+    border-bottom: 5px solid #EEE;
+    
+}
+
+.firstp {
+    margin-top: 20px;
+}
+
+.source {
+    margin-left: 1em;
+}
