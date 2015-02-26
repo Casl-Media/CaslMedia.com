@@ -58,3 +58,14 @@ body {
 	border-width: 3px;
 	border-color: #FFF;
 }
+
+@media (max-width: 767px) {
+    .jumbotron  p {
+	    font-size: 14px;
+    }
+
+    .jumbotron h2 {
+	    font-size: 20px;
+	    line-height: 1.2;
+    }
+}
