@@ -59,6 +59,10 @@ body {
 	border-color: #FFF;
 }
 
+.toplink {
+    color: black;
+}
+
 @media (max-width: 767px) {
     .jumbotron  p {
 	    font-size: 14px;
