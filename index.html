@@ -15,7 +15,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body">
+  <body>
     
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -27,30 +27,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a id="navOne" class="navbar-brand" href="http://www.caslmedia.com"><b>Casl Media</b></a>
+          <a class="navbar-brand" href="http://www.caslmedia.com"><b><span class="navOne">Casl Media</span></b></a>
         </div>
 		
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a id="navTwo" href="#updates""><b>Updates</b></a></li>
+            <li><a href="#updates" class="toplink"><span class="navTwo">Updates</span></a></li>
             <li class="dropdown">
-              <a id="navThree" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><b>Projects</b> <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="navThree"><b>Projects</b></span> <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a class="navEight" href="#CB"><b>Casl Blue</b></a></li>
-                <li><a class="navNine" href="#OE"><b>Open Epistemology</b></a></li>
-                <li><a class="navTen" href="#TTM"><b>The Typographic Mind</b></a></li>
-                <li><a class="navEleven" href="#NPR"><b>Why I Hate NPR</b></a></li>
+                <li><a href="#CB" class="toplink"><span class="navEight">Casl Blue</a></span></li>
+                <li><a href="#OE" class="toplink"><span class="navNine">Open Epistemology</span></a></li>
+                <li><a href="#TTM" class="toplink"><span class="navTen">The Typographic Mind</span></a></li>
+                <li><a href="#NPR" class="toplink"><span class="navEleven">Why I Hate NPR</span></a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header"><b>Indiviudals</b></li>
-                <li><a class="navTwelve" href="#IN"><b>J.E.Clevenger</b></a></li>
+                <li><a href="#IN" class="toplink"><span class="navTwelve">J.E.Clevenger</span></a></li>
               </ul>
             </li>
-			<li><a id="navFour" href="#consulting"><b>Consulting</b></a></li>
-			<li><a id="navFive" href="#publishing"><b>Publishing</b></a></li>
-            <li><a id="navSix" href="#about"><b>About</b></a></li>
-            <li><a id="navSeven" href="#contact"><b>Contact</b></a></li>
+			<li><a href="#consulting" class="toplink"><span class="navFour">Consulting</span></a></li>
+			<li><a href="#publishing" class="toplink"><span class="navFive">Publishing</span></a></li>
+            <li><a href="#about" class="toplink"><span class="navSix">About</span></a></li>
+            <li><a href="#contact" class="toplink"><span class="navSeven">Contact</span></a></li>
           </ul>
-		  <p class="navbar-text navbar-right"><b>v0.1.8</b></p>
+		  <p class="navbar-text navbar-right"><b>v0.1.9</b></p>
         </div><!--/.nav-collapse -->
 		
       </div>
@@ -61,7 +61,7 @@
       <div id="CM" class="jumbotron">
         <h2><span class="section"">Casl Media, LLC <small>established 2014</small></span></h2>
         <p class="firstp">Engineering a better tomorrow through collaborative projects:</p>
-<p><a class="toplink" href="http://www.casl.blue">Casl Blue</a> | <a class="toplink"  href="https://github.com/Casl-Media/open-epistemology">Open Epistemology</a> | <a class="toplink" href="http://www.thetypographicmind.com">The Typographic Mind</a> | <a class="toplink" href="http://www.whyihatenpr.com">Why I Hate NPR</a></p>
+<p><a href="http://www.casl.blue">Casl Blue</a> | <a href="https://github.com/Casl-Media/open-epistemology">Open Epistemology</a> | <a href="http://www.thetypographicmind.com">The Typographic Mind</a> | <a href="http://www.whyihatenpr.com">Why I Hate NPR</a></p>
 
       </div>
 
@@ -231,89 +231,8 @@
     </div> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>
-        // borrowed from https://github.com/mbostock/d3/blob/master/lib/colorbrewer/colorbrewer.js
-        // This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
-        var colorbrewer = [
-                            ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"],
-                            ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#6a3d9a","#b15928"],
-                            ["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#f781bf","#999999"]
-                        ];
-        // http://www.flatuicolorpicker.com/gray
-        var backgroundcolors = ["#ececec","#6C7A89","#D2D7D3","#BDC3C7","#ECF0F1","#95A5A6","#DADFE1","#ABB7B7","#F2F1EF","#BFBFBF"];
-                                   
-        
-        //https://github.com/coolaj86/knuth-shuffle
-        function shuffle(array) {
-          var currentIndex = array.length, temporaryValue, randomIndex ;
-
-          // While there remain elements to shuffle...
-          while (0 !== currentIndex) {
-
-            // Pick a remaining element...
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
-
-            // And swap it with the current element.
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-          }
-
-          return array;
-        }
-
-        shuffle(colorbrewer);
-        colors = shuffle(colorbrewer[0]);
-        backgroundcolor = shuffle(backgroundcolors);
-        $( "body" ).css( "background-color", backgroundcolor[0]);
-        $( ".jumbotron" ).each(function( index ) {     
-            var col = 0
-            // you might not need the -1, i don't use js. didn't solve for all of math, brewer scales are typically 9 length
-            if (index > colors.length - 1) {
-                if (index > colors.length * 2 - 1) {
-                    if (index > colors.length * 3 - 1) {
-                        col = index - colors.length * 3
-                    } else {
-                        col = index - colors.length * 2
-                    }
-                } else {
-                    col = index - colors.length
-                }
-            } else {
-                col = index
-            }
-            $( this ).css( "border", "5px solid " + colors[col]);
-            $( this ).find( "a" ).css( "color", colors[col]);
-            $( this ).find( ".section" ).css( "border-bottom", "5px solid " + colors[index]);
-            if ( $( this ).attr( "id" ) == "CM" ) {
-                $( "#navOne" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "updates" ) {
-                $( "#navTwo" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "consulting" ) {
-                $( "#navFour" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "publishing" ) {
-                $( "#navFive" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "about" ) {
-                $( "#navSix" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "contact" ) {
-                $( "#navSeven" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "CB" ) {
-                $( ".navEight" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "OE" ) {
-                $( ".navNine" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "TTM" ) {
-                $( ".navTen" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "NPR" ) {
-                $( ".navEleven" ).css( "color", colors[col]);
-            } else if ( $( this ).attr( "id" ) == "IN" ) {
-                $( ".navTwelve" ).css( "color", colors[col]);
-            } else {
-
-            }
-        });
-
-    </script>
+        <script></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/color.js"></script>
   </body>
 </html>
