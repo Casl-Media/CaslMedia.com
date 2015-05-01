@@ -2,9 +2,9 @@ $( document ).ready(function() {
         // borrowed from https://github.com/mbostock/d3/blob/master/lib/colorbrewer/colorbrewer.js
         // This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
         var colorbrewer = [
-                            ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"],
+                            ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666","#6a3d9a","#b15928"],
                             ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#6a3d9a","#b15928"],
-                            ["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#f781bf","#999999"]
+                            ["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#f781bf","#999999","#6a3d9a","#b15928"]
                         ];
         // http://www.flatuicolorpicker.com/gray
         var backgroundcolors = ["#ececec","#D2D7D3","#BDC3C7","#ECF0F1","#95A5A6","#DADFE1","#ABB7B7","#F2F1EF","#BFBFBF"];
@@ -67,14 +67,19 @@ $( document ).ready(function() {
                 $( ".navSeven" ).css( "border-bottom", "2px solid " + colors[col]);
             } else if ( $( this ).attr( "id" ) == "CB" ) {
                 $( ".navEight" ).css( "border-bottom", "2px solid " + colors[col]);
+                $( ".navEightB" ).css( "color", colors[col]);
             } else if ( $( this ).attr( "id" ) == "OE" ) {
                 $( ".navNine" ).css( "border-bottom", "2px solid " + colors[col]);
+                $( ".navNineB" ).css( "color", colors[col]);
             } else if ( $( this ).attr( "id" ) == "TTM" ) {
                 $( ".navTen" ).css( "border-bottom", "2px solid " + colors[col]);
+                $( ".navTenB" ).css( "color", colors[col]);
             } else if ( $( this ).attr( "id" ) == "NPR" ) {
                 $( ".navEleven" ).css( "border-bottom", "2px solid " + colors[col]);
+                $( ".navElevenB" ).css( "color", colors[col]);
             } else if ( $( this ).attr( "id" ) == "IN" ) {
                 $( ".navTwelve" ).css( "border-bottom", "2px solid " + colors[col]);
+                $( ".navTwelveB" ).css( "color", colors[col]);
             } else {
 
             }
