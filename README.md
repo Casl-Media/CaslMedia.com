@@ -1,4 +1,4 @@
-<h2><a href="http://www.caslmedia.com">CaslMedia.com</a> hosted on GitHub</h2>
+<h2><a href="http://www.caslmedia.com">CaslMedia.com</a></h2>
 <h4>examples in code:</h4>
 <ul>
 <li>
