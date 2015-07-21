@@ -52,8 +52,8 @@ $( document ).ready(function() {
             }
             $( this ).css( "border", "5px solid " + colors[col]);
             $( this ).find( "a" ).css( "color", colors[col]);
-            $( this ).find( ".section" ).css( "border-bottom", "5px solid " + colors[index]);
-            $( this ).find( ".sectionb" ).css( "border-bottom", "2px solid " + colors[index]);
+            $( this ).find( ".section" ).css( "border-bottom", "5px solid " + colors[col]);
+            $( this ).find( ".sectionb" ).css( "border-bottom", "2px solid " + colors[col]);
             if ( $( this ).attr( "id" ) == "CM" ) {
                 $( ".navOne" ).css( "color", colors[col]);
             } else if ( $( this ).attr( "id" ) == "updates" ) {
