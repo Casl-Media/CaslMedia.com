@@ -34,6 +34,7 @@ $( document ).ready(function() {
         colors = shuffle(colorbrewer[0]);
         backgroundcolor = shuffle(backgroundcolors);
         $( "body" ).css( "background-color", backgroundcolor[0]);
+        $( ".navbar-fixed-top" ).css( "background", backgroundcolor[0]);
         $( ".jumbotron" ).each(function( index ) {     
             var col = 0
             // you might not need the -1, i don't use js. didn't solve for all of math, brewer scales are typically 9 length

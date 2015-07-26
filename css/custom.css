@@ -2,6 +2,15 @@ body {
     background-color: #EEE;
 }
 
+.navbar-fixed-top {
+    border-bottom: none;
+}
+.navbar .container {
+    background: #FFF;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+}
+
 #main {
     padding-top: 71px;
 }
@@ -67,6 +76,12 @@ body {
     border-bottom: 5px solid red;
 }
 .toplinktwo {
+}
+
+.nlink {
+    margin-top: -50px;
+    padding-bottom: 50px;
+    display: block;
 }
 
 @media (max-width: 767px) {
