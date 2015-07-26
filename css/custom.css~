@@ -79,11 +79,9 @@ body {
 }
 
 .nlink {
-    display: block;
-    content: " ";
     margin-top: -50px;
-    height: 50px;
-    visibility: hidden;
+    padding-bottom: 50px;
+    display: block;
 }
 
 @media (max-width: 767px) {
