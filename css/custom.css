@@ -2,6 +2,9 @@ body {
     background-color: #EEE;
 }
 
+.indexspacer {
+    min-height: 2em;
+}
 .navbar-fixed-top {
     border-bottom: none;
 }
@@ -21,6 +24,7 @@ body {
 
 .jumbotron {
     background-color: #FFF;
+    margin-top: 30px;
 }
 
 .jumbotron  p {
