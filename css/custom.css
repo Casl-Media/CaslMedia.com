@@ -1,9 +1,14 @@
 body {
     background-color: #EEE;
 }
-
+.index_spacer_small {
+    height: 1em;
+    width: 100%;
+    text-align: center;
+}
 .indexspacer {
     min-height: 2em;
+    /*height: 2em;*/
 }
 .navbar-fixed-top {
     border-bottom: none;
@@ -24,7 +29,8 @@ body {
 
 .jumbotron {
     background-color: #FFF;
-    margin-top: 30px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .jumbotron  p {
@@ -92,7 +98,6 @@ body {
     .jumbotron  p {
 	    font-size: 14px;
     }
-
     .jumbotron h2 {
 	    font-size: 20px;
 	    line-height: 1.2;
