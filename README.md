@@ -1,4 +1,4 @@
-<h2>hosted at <a href="http://www.jeclevenger.com/static-sites/caslmedia">jeclevenger.com/static-sites/caslmedia</a></h2>
+<h2>hosted at <a href="http://www.jeclevenger.com/static-site/CaslMedia-v1/">jeclevenger.com/static-site/CaslMedia-v1</a></h2>
 <p><a href="http://caslmedia.com">CaslMedia.com</a> the first iteration</p>
 <h4>examples in code:</h4>
 <ul>
